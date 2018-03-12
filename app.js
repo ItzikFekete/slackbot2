@@ -14,7 +14,7 @@ app.listen(port, function () {
     console.log('Listening on port ' + port);
 });
 
-app.post('/hello', function (req, res, next) {
+app.post('/osi', function (req, res, next) {
     var userName = req.body.user_name;
     var botPayload = {
         text: 'Hello ' + userName + ', welcome to OSI Slack channel! /n How can I help you?'
